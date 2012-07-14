@@ -1,0 +1,9 @@
+[submodule ".vim/bundle/bufexplorer"]
+    path = .vim/bundle/bufexplorer
+    url = https://github.com/corntrace/bufexplorer.git
+    ignore = dirty
+[submodule ".vim/bundle/matchit.zip"]
+    path = .vim/bundle/matchit.zip
+    url = https://github.com/vim-scripts/matchit.zip.git
+    ignore = dirty
+
