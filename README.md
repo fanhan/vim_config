@@ -4,8 +4,8 @@ get this
 
     cd
     git clone git://github.com/nirocfz/vim_config.git .vim_config
-    ln -sfn .vim_config/.vim ~/.vim
-    ln -sfn .vim_config/.vimrc ~/.vimrc
+    ln -sfn .vim_config/.vim .
+    ln -sfn .vim_config/.vimrc .
 
 then install vundle
 
