@@ -63,6 +63,7 @@
     Bundle 'a.vim'
     Bundle 'echofunc.vim'
     Bundle 'TwitVim'
+    Bundle 'rfc-syntax'
 " }
 
 " General {
@@ -305,7 +306,7 @@
     " }
 
     " Ctags {
-        set tags=./tags;/,~/.vimtags
+        set tags=./tags;/,~/.vimtags,~/.systags
     " }
 
     " AutoCloseTag {
@@ -450,6 +451,11 @@
 
      " TwitVim {
         let twitvim_proxy="127.0.0.1:8087"
+     " }
+     " rfc-syntax{
+        if expand('%:t') =~? 'rfc\d\+'
+            setfiletype rfc
+        endif
      " }
 " }
 
