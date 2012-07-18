@@ -205,7 +205,7 @@
     nmap <leader>f9 :set foldlevel=9<CR>
 
     "clearing highlighted search
-    nmap <silent> <leader>/ :nohlsearch<CR>
+    nmap <silent> <leader>ll :nohlsearch<CR>
 
     " Shortcuts
     " Change Working Directory to that of the current file
