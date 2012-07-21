@@ -452,6 +452,7 @@
      " TwitVim {
         let twitvim_proxy="127.0.0.1:8087"
      " }
+
      " rfc-syntax{
         if expand('%:t') =~? 'rfc\d\+'
             setfiletype rfc
