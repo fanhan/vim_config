@@ -9,7 +9,7 @@
         set background=dark
         filetype off
     " }
-    "
+
     " Setup Bundle Support {
     " The next two lines ensure that the ~/.vim/bundle/ system works
         set rtp+=~/.vim/bundle/vundle
@@ -161,7 +161,6 @@
 " }
 
 " Key (re)Mappings {
-
     "The default leader is '\', but many people prefer ',' as it's in a standard
     "location
     let mapleader = ','
@@ -249,14 +248,7 @@
     "Fast editing of .vimrc
     map <silent> <leader>ee :e ~/.vimrc<cr>
 
-    if !has('mac')
-        let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-    endif
-    nnoremap <silent> <F3> :Ack<CR>
-    nnoremap <silent> <F12> :A<CR>
-
     autocmd FileType c,cpp map <silent> <leader>ct :!ctags -R  --langmap=c:+.h --languages=c,c++ --links=yes --c-kinds=+p --c++-kinds=+p --fields=+ialS --extra=+q --sort=yes --exclude=.git .<CR><CR>
-
 " }
 
 " Plugins {
@@ -465,10 +457,21 @@
      " vim-indent-guides {
         let g:indent_guides_enable_on_vim_startup=1
         let g:indent_guides_guide_size=1
-     " } 
+     " }
 
      " Gundo {
-     nnoremap <Leader>u :GundoToggle<CR>
+        nnoremap <Leader>u :GundoToggle<CR>
+     " }
+
+     " Ack {
+        if !has('mac')
+            let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+        endif
+        nnoremap <silent> <F3> :Ack<CR>
+     " }
+
+     " A {
+        nnoremap <silent> <F12> :A<CR>
      " }
 " }
 
@@ -487,7 +490,6 @@
 " }
 
 " Functions {
-
 function! InitializeDirectories()
     let separator = "."
     let parent = $HOME
