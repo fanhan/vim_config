@@ -64,6 +64,7 @@
     Bundle 'echofunc.vim'
     Bundle 'TwitVim'
     Bundle 'rfc-syntax'
+    Bundle 'roman/golden-ratio'
 " }
 
 " General {
