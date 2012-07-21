@@ -65,6 +65,8 @@
     Bundle 'TwitVim'
     Bundle 'rfc-syntax'
     Bundle 'roman/golden-ratio'
+    Bundle 'mutewinter/vim-indent-guides'
+    Bundle 'sjl/gundo.vim'
 " }
 
 " General {
@@ -155,7 +157,7 @@
     "set comments=sl:/*,mb:*,elx:*/  " auto format comment blocks
     " Remove trailing whitespaces and ^M chars
     "autocmd FileType c,cpp,java,php,javascript,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
-    autocmd FileType c,cpp,java,php,javascript,python,twig,xml,yml map <leader>st :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")')) <CR><CR>
+    autocmd FileType c,cpp,java,php,javascript,python,twig,xml,yml map <Leader>st :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")')) <CR><CR>
 " }
 
 " Key (re)Mappings {
@@ -454,10 +456,19 @@
         let twitvim_proxy="127.0.0.1:8087"
      " }
 
-     " rfc-syntax{
+     " rfc-syntax {
         if expand('%:t') =~? 'rfc\d\+'
             setfiletype rfc
         endif
+     " }
+
+     " vim-indent-guides {
+        let g:indent_guides_enable_on_vim_startup=1
+        let g:indent_guides_guide_size=1
+     " } 
+
+     " Gundo {
+     nnoremap <Leader>u :GundoToggle<CR>
      " }
 " }
 
