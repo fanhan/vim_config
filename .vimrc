@@ -473,6 +473,12 @@
      " A {
         nnoremap <silent> <F12> :A<CR>
      " }
+
+     " Golden Ratio {
+        if &diff
+            let g:loaded_golden_ratio=1
+        endif
+     " }
 " }
 
 " GUI Settings {
