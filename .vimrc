@@ -74,6 +74,8 @@
     syntax on
     "set mouse=a
     scriptencoding utf-8
+    set encoding=utf-8
+    set fileencodings=utf-8,chinese,latin-1
     autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
     set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
     set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
@@ -147,6 +149,7 @@
 
 " Formatting {
     set nowrap                      " wrap long lines
+    set showbreak=->
     set autoindent                  " indent at the same level of the previous line
     set shiftwidth=4                " use indents of 4 spaces
     set expandtab                   " tabs are spaces, not tabs
