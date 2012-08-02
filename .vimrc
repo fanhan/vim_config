@@ -101,11 +101,11 @@
 
     if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
         color solarized                 " load a colorscheme
-    endif
         let g:solarized_termtrans=1
         let g:solarized_termcolors=256
         let g:solarized_contrast="high"
         let g:solarized_visibility="high"
+    endif
     set tabpagemax=15               " only show 15 tabs
     set showmode                    " display the current mode
 
@@ -492,7 +492,9 @@
         set lines=40                " 40 lines of text instead of 24,
         if has('gui_macvim')
             set guifont=Monaco:h14
-            set transparency=5          " Make the window slightly transparent
+            "set transparency=5          " Make the window slightly transparent
+        elseif has('gui_gtk2')
+            set guifont=Droid\ Sans\ Mono\ 12
         endif
     else
         "set term=builtin_ansi       " Make arrow and other keys work
