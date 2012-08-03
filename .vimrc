@@ -149,7 +149,7 @@
 
 " Formatting {
     set nowrap                      " wrap long lines
-    set showbreak=->
+    "set showbreak=->
     set autoindent                  " indent at the same level of the previous line
     set shiftwidth=4                " use indents of 4 spaces
     set expandtab                   " tabs are spaces, not tabs
