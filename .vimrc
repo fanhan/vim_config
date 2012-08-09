@@ -269,6 +269,10 @@
         nnoremap <silent> <leader>gp :Git push<CR>
     " }
 
+    " Powerline {
+        let g:Powerline_symbols = 'fancy'
+    " }
+
     " Mark {
         nmap <silent> <leader>hl <Plug>MarkSet
         vmap <silent> <leader>hl <Plug>MarkSet
