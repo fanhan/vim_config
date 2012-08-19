@@ -67,6 +67,7 @@
     Bundle 'roman/golden-ratio'
     Bundle 'mutewinter/vim-indent-guides'
     Bundle 'sjl/gundo.vim'
+    Bundle 'fsouza/go.vim'
 " }
 
 " General {
@@ -271,6 +272,7 @@
 
     " Powerline {
         let g:Powerline_symbols = 'fancy'
+        "let g:Powerline_colorscheme = 'skwp'
     " }
 
     " Mark {
@@ -498,7 +500,8 @@
             set guifont=Monaco\ for\ Powerline:h14
             "set transparency=5          " Make the window slightly transparent
         elseif has('gui_gtk2')
-            set guifont=Droid\ Sans\ Mono\ 12
+            "set guifont=Droid\ Sans\ Mono\ 12
+            set guifont=Monaco\ for\ Powerline\ 12
         endif
     else
         "set term=builtin_ansi       " Make arrow and other keys work
@@ -549,4 +552,5 @@ function! NERDTreeInitAsNeeded()
     endif
 endfunction
 " }
+
 
