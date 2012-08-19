@@ -495,7 +495,7 @@
         set guioptions-=T           " remove the toolbar
         set lines=40                " 40 lines of text instead of 24,
         if has('gui_macvim')
-            set guifont=Monaco:h14
+            set guifont=Monaco\ for\ Powerline:h14
             "set transparency=5          " Make the window slightly transparent
         elseif has('gui_gtk2')
             set guifont=Droid\ Sans\ Mono\ 12
