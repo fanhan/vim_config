@@ -1,4 +1,7 @@
 this is my vim config file, part of this from spf13
+**some plugins need ruby or python support**
+**Powerline**'s fancy symbols need special fonts, if you do not have one, you may want to delete or comment `let g:Powerline_symbols = 'fancy'` in  this `.vimrc` file, for more details, go to [Powerline](https://github.com/Lokaltog/vim-powerline).
+
 ###how to install
 get this
 
