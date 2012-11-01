@@ -53,7 +53,8 @@
     endif
     Bundle 'Rip-Rip/clang_complete'
     Bundle 'Shougo/neocomplcache'
-    Bundle 'Shougo/neocomplcache-snippets-complete'
+    "Bundle 'Shougo/neocomplcache-snippets-complete'
+    Bundle 'Shougo/neosnippet'
     Bundle 'Shougo/neocomplcache-clang_complete'
     Bundle 'spf13/vim-markdown'
     Bundle 'spf13/vim-preview'
