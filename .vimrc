@@ -6,7 +6,6 @@
 " Environment {
     " Basics {
         set nocompatible
-        set background=dark
         filetype off
     " }
 
@@ -72,6 +71,10 @@
 " }
 
 " General {
+    if &term == 'xterm' || &term == 'screen'
+        set t_Co=256
+    endif
+    set background=dark
     filetype plugin indent on
     syntax on
     "set mouse=a
@@ -516,10 +519,6 @@
             set guifont=Monaco\ for\ Powerline\ 12
         endif
     else
-        "if &term =~ '^\(xterm\|screen\)$' || $COLORTERM == 'gnome-terminal'
-        if &term == 'xterm' || &term == 'screen'
-            set t_Co=256
-        endif
         "set term=builtin_ansi       " Make arrow and other keys work
     endif
 " }
