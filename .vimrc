@@ -54,7 +54,7 @@
     Bundle 'Shougo/neocomplcache'
     Bundle 'Shougo/neosnippet'
     Bundle 'honza/snipmate-snippets'
-    Bundle 'Shougo/neocomplcache-clang_complete'
+    Bundle 'Shougo/neocomplcache-clang'
     Bundle 'spf13/vim-markdown'
     Bundle 'spf13/vim-preview'
     Bundle 'tpope/vim-cucumber'
@@ -462,10 +462,10 @@
         " use neocomplcache & clang_complete
 
         " add neocomplcache option
-        let g:neocomplcache_force_overwrite_completefunc=1
+        "let g:neocomplcache_force_overwrite_completefunc=1
 
         " add clang_complete option
-        let g:clang_complete_auto=1
+        "let g:clang_complete_auto=1
      " }
 
      " TwitVim {
