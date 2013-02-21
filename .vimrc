@@ -61,7 +61,7 @@
     Bundle 'Mark'
     Bundle 'a.vim'
     Bundle 'cocoa.vim'
-    Bundle 'mbbill/echofunc.vim'
+    Bundle 'mbbill/echofunc'
     Bundle 'TwitVim'
     Bundle 'rfc-syntax'
     Bundle 'roman/golden-ratio'
