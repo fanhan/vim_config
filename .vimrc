@@ -456,13 +456,13 @@
         let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/snippets'
 
         " Enable neosnippet snipmate compatibility mode
-        let g:neosnippet#enable_snipmate_compatibility = 1        
+        let g:neosnippet#enable_snipmate_compatibility = 1
 
         " For snippet_complete marker.
         if has('conceal')
             set conceallevel=2 concealcursor=i
         endif
-    " }    
+    " }
 
     " neocomplcache-clang_complete {
         " use neocomplcache & clang_complete
