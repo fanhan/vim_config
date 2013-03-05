@@ -391,7 +391,7 @@
         let g:neocomplcache_enable_smart_case = 1
         let g:neocomplcache_enable_underbar_completion = 1
         let g:neocomplcache_enable_auto_delimiter = 1
-        let g:neocomplcache_max_list = 15
+        "let g:neocomplcache_max_list = 15
         let g:neocomplcache_force_overwrite_completefunc = 1
 
         " SuperTab like snippets behavior.
