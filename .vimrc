@@ -86,6 +86,7 @@
     set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
     set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
     set history=1000
+    set dictionary=/usr/share/dict/words
     set hidden
     " Setting up the directories {
         set backup                      " backups are nice ...
